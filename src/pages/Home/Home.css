@@ -24,6 +24,12 @@
 
 .video-list-wrapper li {
   display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.video-list-wrapper li:last-child {
+  border: none;
 }
 
 .thumb-wrapper {

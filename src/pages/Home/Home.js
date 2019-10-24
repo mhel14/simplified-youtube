@@ -15,7 +15,10 @@ const Home = () => {
     fetchVideos('http://localhost:3001/');
   }, []);
 
-  const playVideoHandler = (fileName) => setActiveVideo(fileName);
+  const playVideoHandler = (fileName) => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+    setActiveVideo(fileName)
+  }
 
   return ( 
     <div className="home-wrapper">
